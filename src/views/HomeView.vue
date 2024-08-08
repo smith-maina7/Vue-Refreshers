@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import AdditionCounter from '@/components/AdditionCounter.vue'
+import todoList from '../components/todoList.vue'
 
 const figure = ref(0)
 const errorMessage = ref('')
@@ -27,5 +28,6 @@ const subtraction = () => {
       :deduction="subtraction"
       :error="errorMessage"
     />
+    <todoList />
   </main>
 </template>
